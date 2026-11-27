@@ -1,0 +1,19 @@
+# Dependencies
+/node_modules
+
+# Next.js
+/.next/
+/out/
+next-env.d.ts
+
+# Env
+.env
+.env*.local
+
+# Testing, AI scratch & OS
+coverage/
+tsconfig.tsbuildinfo
+.impeccable/
+.playwright-mcp/
+.DS_Store
+Thumbs.db

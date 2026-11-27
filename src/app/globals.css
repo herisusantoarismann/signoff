@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #141414;
+  --paper: #F3F3EF;
+  --canvas-slate: #0F172A;
+  --surface-slate: #1E293B;
+  --signal-open: #F43F5E;
+  --signal-progress: #3B82F6;
+  --signal-resolved: #10B981;
+}
+
+@theme inline {
+  --font-sans: var(--font-ui), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-canvas-slate: var(--canvas-slate);
+  --color-surface-slate: var(--surface-slate);
+  --color-signal-open: var(--signal-open);
+  --color-signal-progress: var(--signal-progress);
+  --color-signal-resolved: var(--signal-resolved);
+}
+
+html,
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+.font-mono-data {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+.canvas-grid-bg {
+  background-color: var(--canvas-slate);
+  background-image: radial-gradient(rgba(148, 163, 184, 0.16) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.001ms !important;
+    animation-duration: 0.001ms !important;
+  }
+}
